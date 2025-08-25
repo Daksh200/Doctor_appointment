@@ -94,6 +94,7 @@ export const AppointmentForm = ({
         const appointmentToUpdate = {
           userId,
           appointmentId: appointment?.$id!,
+          timeZone: "UTC", // Assuming a default time zone
           appointment: {
             primaryPhysician: values.primaryPhysician,
             schedule: new Date(values.schedule),
